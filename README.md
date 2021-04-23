@@ -8,6 +8,7 @@ This solution uses a smart switch (WEMO) with a laptop charge cable plugged into
 Configure a webhook in your tool of choice, I used homeassistant.
 
 Create a cron job to call the script template below
+
 `<path to script>/toggle.sh "$(cat /sys/class/power_supply/BAT0/capacity)"`
 
 Create the script called: toggle.sh
